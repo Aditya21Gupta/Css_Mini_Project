@@ -10,6 +10,10 @@
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-image: url('pnbb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .container {
     width: 80%;
@@ -17,7 +21,7 @@
     overflow: hidden;
   }
   header {
-    background: rgb(245, 245, 143);
+    background: yellow; 
     color: white;
     padding-top: 30px;
     min-height: 70px;
@@ -49,28 +53,63 @@
     margin-top: 10px;
   }
   header .highlight, header .current a {
-    color: #e8491d;
+    color: #ff3700;
     font-weight: bold;
   }
   header .highlight1, header .current a {
-    color: brown;
+    color: #ff3700;
     font-weight: bold;
   }
   header a:hover {
     color: #ffffff;
     font-weight: bold;
   }
-
+  .login-container {
+    background-color: rgb(242, 246, 22); 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #eef67c;
+  }
+  .form-group {
+    margin-bottom: 20px;
+    color:#eef67c;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eef67c;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .form-group input[type="submit"] {
+    background-color: red;
+    color: #eef67c;
+    border: none;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight"> Gujarat </span> <span class="highlight1"> National </span> <span class="highlight"> Bank </span> </h1>
-      </div>
-      <nav>
-        <ul>
+  <div class="container">
+    <div id="branding">
+      <h1><span class="highlight">Punjab</span> <span class="highlight1">National</span> <span class="highlight">Bank</span></h1>
+    </div>
+    <nav>
+    <ul>
           <li class="current"><a href="index.html">Home</a></li>
           <li class="current"><a href="about.html">About</a></li>
           <li class="current"><a href="services.html">Services</a></li>
@@ -80,12 +119,24 @@
   </header>
 
   <div class="container">
-  <h3>  Welcome to Gujarat National Bank NetBanking </h3>
-  <style> h3 {text-align: center; color: crimson;} </style>
+    <h3>Welcome to Punjab National Bank NetBanking</h3>
   </div>
-  <div>
-    
+
+  <div class="login-container">
+    <h2>Net Banking Login</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="username">User ID:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Login">
+      </div>
+    </form>
   </div>
 </body>
 </html>
- 
